@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Defaults are sufficient: WebView storage backs up automatically. -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- Defaults are sufficient. -->
+    </device-transfer>
+</data-extraction-rules>

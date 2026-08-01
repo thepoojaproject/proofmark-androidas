@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.9"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_offline"
+        app:tint="@color/brand_accent"
+        xmlns:app="http://schemas.android.com/apk/res/res-auto" />
+
+    <TextView
+        android:id="@+id/offlineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_no_connection_title"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:textColor="@color/brand_ink"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/offlineMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="12dp"
+        android:gravity="center"
+        android:text="@string/error_no_connection_message"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="#9B9BB0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retryButton"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/action_retry" />
+
+</LinearLayout>

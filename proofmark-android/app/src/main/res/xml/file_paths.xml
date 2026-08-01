@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Temporary camera capture files, e.g. photos taken for the
+         WebView's "Use camera" upload flow before they're attached to
+         the file input. -->
+    <cache-path name="camera_captures" path="captures/" />
+
+    <!-- App-private files directory, used as scratch space if needed. -->
+    <files-path name="app_files" path="." />
+
+    <!-- External app-specific files, useful for exposing exported QR
+         images to other apps if the user chooses to share them. -->
+    <external-files-path name="external_files" path="." />
+</paths>

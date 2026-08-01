@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_background"
+            android:contentDescription="@string/webview_description" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Thin top-of-screen loading indicator, shown while the WebView is
+         loading a page (0-99% via WebChromeClient#onProgressChanged) and
+         hidden once loading completes — avoids a blank/white flash and
+         gives clear loading feedback without blocking interaction. -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:visibility="gone"
+        app:indicatorColor="@color/brand_accent_dark"
+        app:trackColor="@android:color/transparent"
+        app:trackThickness="3dp"
+        xmlns:app="http://schemas.android.com/apk/res/res-auto" />
+
+    <!-- Shown instead of the WebView when the bundled page fails to load. -->
+    <include
+        android:id="@+id/offlineView"
+        layout="@layout/view_offline"
+        android:visibility="gone" />
+
+    <!-- Target container for WebChromeClient#onShowCustomView, used for
+         HTML5 fullscreen video/media playback inside the WebView. -->
+    <FrameLayout
+        android:id="@+id/fullscreenContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone" />
+
+</FrameLayout>

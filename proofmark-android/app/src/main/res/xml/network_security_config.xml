@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- The embedded app only talks to the local WebViewAssetLoader virtual
+         domain and HTTPS endpoints (Google Fonts, ImgBB API), so cleartext
+         (plain HTTP) traffic is disabled app-wide for security. -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

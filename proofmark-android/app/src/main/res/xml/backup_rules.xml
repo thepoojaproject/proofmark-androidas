@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- The app's data lives in the WebView's own localStorage/IndexedDB
+         (backed up automatically by the WebView data directories) plus
+         nothing sensitive in app-private storage, so no explicit
+         include/exclude rules are required beyond the defaults. -->
+</full-backup-content>

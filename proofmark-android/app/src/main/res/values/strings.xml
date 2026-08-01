@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proofmark</string>
+    <string name="webview_description">Proofmark app content</string>
+
+    <string name="error_no_connection_title">You\'re offline</string>
+    <string name="error_no_connection_message">Proofmark needs an internet connection for this action. Check your connection and try again.</string>
+    <string name="error_generic_title">Something went wrong</string>
+    <string name="error_generic_message">This page couldn\'t load. Pull down to try again.</string>
+    <string name="action_retry">Retry</string>
+
+    <string name="permission_camera_rationale">Proofmark needs camera access so you can capture a photo to turn into a QR code.</string>
+    <string name="permission_denied_camera">Camera permission was denied, so photo capture isn\'t available right now.</string>
+
+    <string name="download_started">Download started</string>
+    <string name="download_complete">Download complete: %1$s</string>
+    <string name="download_failed">Download failed</string>
+
+    <string name="content_desc_loading">Loading Proofmark</string>
+</resources>
